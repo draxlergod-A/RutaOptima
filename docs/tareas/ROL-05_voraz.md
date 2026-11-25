@@ -43,9 +43,9 @@ Tu guion de 1 minuto para la exposición está en `docs/PRESENTACION.md` (busca 
 ## Mis respuestas
 _(Escribe aquí tus respuestas, 2 o 3 líneas por pregunta.)_
 
-1. 
-2. 
-3. 
+1. En cada paso evalúa todos los clientes pendientes y elige al más cercano desde su ubicación actual, siempre y cuando agregarlo a la ruta siga siendo factible según las restricciones del problema (`evaluar_orden`).
+2. Porque el cuello de botella real en el reparto no es el espacio físico del vehículo (la capacidad de 100), sino el tiempo de la jornada laboral; si se llena un solo vehículo al máximo, no alcanzaría a entregar todo a tiempo.
+3. Como el algoritmo voraz solo elige el paso inmediato más cercano, suele saltar entre clientes agrupados y deja a los más lejanos para el final, obligando al vehículo a cruzar todo el mapa de regreso en rutas largas innecesarias.
 
 ## Paso 5. Subir tu trabajo (rama → Pull Request → main)
 ```bash
