@@ -42,7 +42,7 @@ Otros comandos: `python main.py --n 60 --vehiculos 9` (consola) · `python -m py
 |---|---|---|---|---|---|---|
 | 1 | Base del proyecto, evaluador, solver, pruebas, CI y página | `ruta_optima/` base | `main` | [EJECUTAR](EJECUTAR.md) | Luis Angel López Siccha | ✅ Listo |
 | 2 | Instancias: guardar/cargar y distritos | `ruta_optima/instancias.py` | `feature/rol02-instancias` | [ROL-02](docs/tareas/ROL-02_instancias.md) | Edgar Ismael Victorio Capa | ⬜ Pendiente |
-| 3 | Distancias: Dijkstra y red de calles | `ruta_optima/distancias.py` | `feature/rol03-distancias` | [ROL-03](docs/tareas/ROL-03_distancias.md) | _(Luis Fernando)_ | ⬜ Pendiente |
+| 3 | Distancias: Dijkstra y red de calles | `ruta_optima/distancias.py` | `feature/rol03-distancias` | [ROL-03](docs/tareas/ROL-03_distancias.md) | Reyes Casiano Luis Fernando | ⬜ Pendiente |
 | 4 | Zonas: divide y vencerás (Quickselect) | `ruta_optima/zonas.py` | `feature/rol04-zonas` | [ROL-04](docs/tareas/ROL-04_zonas.md) | _(nombre)_ | ⬜ Pendiente |
 | 5 | Voraz y reparto de zonas | `ruta_optima/voraz.py` | `feature/rol05-voraz` | [ROL-05](docs/tareas/ROL-05_voraz.md) | _(nombre)_ | ⬜ Pendiente |
 | 6 | Programación dinámica Held-Karp | `ruta_optima/held_karp.py` | `feature/rol06-held-karp` | [ROL-06](docs/tareas/ROL-06_held-karp.md) | _(nombre)_ | ⬜ Pendiente |
