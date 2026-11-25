@@ -41,11 +41,10 @@ Abre el archivo indicado, lee los comentarios y responde estas preguntas **con t
 Tu guion de 1 minuto para la exposición está en `docs/PRESENTACION.md` (busca tu rol).
 
 ## Mis respuestas
-_(Escribe aquí tus respuestas, 2 o 3 líneas por pregunta.)_
 
-1. 
-2. 
-3. 
+1. Held-Karp es rápido, pero tiene más lógica y es más fácil equivocarse. La fuerza bruta es simple porque prueba todos los órdenes, así que sirve de referencia: si ambos dan el mismo resultado, podemos confiar en Held-Karp.
+2. Coinciden en 200 de 200 zonas al azar (el mismo instante final, o ambos sin solución). Con k = 9, en mi ejecución la fuerza bruta tardó 0.90 s y Held-Karp 0.004 s.
+3. La fuerza bruta es O(k!) órdenes (O(k·k!) si se cuenta el recorrido de cada uno) y Held-Karp es O(k²·2^k). El factorial crece mucho más rápido: de k = 8 a k = 9 la fuerza bruta tardó unas 9 veces más y Held-Karp unas 2.3 veces más.
 
 ## Paso 5. Subir tu trabajo (rama → Pull Request → main)
 ```bash
