@@ -1,0 +1,58 @@
+:root {
+  --fondo: #f4f6fa; --tarjeta: #ffffff; --texto: #1c2233; --suave: #5b6478;
+  --borde: #dde2ee; --acento: #2457d6; --bueno: #137a4a; --malo: #c62828;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --fondo: #12151d; --tarjeta: #1b2030; --texto: #e8ecf6; --suave: #9aa4bd;
+          --borde: #2c3450; --acento: #6d9bff; --bueno: #4cd694; --malo: #ff7b7b; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, "Segoe UI", Roboto, sans-serif; background: var(--fondo); color: var(--texto); }
+.cabecera { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap;
+  padding: 18px 24px; background: var(--tarjeta); border-bottom: 1px solid var(--borde); }
+.cabecera h1 { margin: 0; font-size: 1.35rem; }
+.cabecera p { margin: 4px 0 0; color: var(--suave); font-size: .92rem; }
+.etiqueta { background: var(--acento); color: #fff; padding: 4px 10px; border-radius: 999px; font-size: .78rem; }
+.contenedor { display: grid; grid-template-columns: 290px 1fr; gap: 20px; padding: 20px 24px; max-width: 1400px; margin: 0 auto; }
+@media (max-width: 900px) { .contenedor { grid-template-columns: 1fr; padding: 16px; } }
+.panel, .resultados > div, .aviso { background: var(--tarjeta); border: 1px solid var(--borde); border-radius: 12px; }
+.panel { padding: 18px; align-self: start; position: sticky; top: 12px; }
+.panel h2 { margin: 0 0 12px; font-size: 1.05rem; }
+label { display: block; margin-bottom: 14px; font-size: .9rem; }
+input[type=range] { width: 100%; }
+input[type=number], select { width: 100%; padding: 7px; border-radius: 8px; border: 1px solid var(--borde); background: var(--fondo); color: var(--texto); }
+.casilla { display: flex; gap: 8px; align-items: center; }
+button { cursor: pointer; font: inherit; }
+#calcular { width: 100%; padding: 11px; border: 0; border-radius: 9px; background: var(--acento); color: #fff; font-weight: 600; }
+#calcular:disabled { opacity: .6; cursor: wait; }
+.secundario { width: 100%; margin-top: 8px; padding: 9px; border-radius: 9px; border: 1px solid var(--borde); background: transparent; color: var(--texto); }
+.ayuda { margin-top: 14px; font-size: .84rem; color: var(--suave); }
+.aviso { padding: 22px; color: var(--suave); }
+.aviso.error { color: var(--malo); border-color: var(--malo); }
+#contenido { padding: 16px 18px 20px; }
+.pestanas { display: flex; gap: 6px; border-bottom: 1px solid var(--borde); margin-bottom: 16px; }
+.pestana { border: 0; background: none; padding: 9px 14px; color: var(--suave); border-bottom: 3px solid transparent; }
+.pestana.activa { color: var(--acento); border-bottom-color: var(--acento); font-weight: 600; }
+.resumen { background: var(--fondo); border-radius: 10px; padding: 12px 14px; margin-bottom: 14px; line-height: 1.5; }
+.tabla-caja { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: .9rem; }
+th, td { padding: 8px 10px; border-bottom: 1px solid var(--borde); text-align: right; }
+th:first-child, td:first-child { text-align: left; }
+thead th { color: var(--suave); font-weight: 600; }
+td.mejor { color: var(--bueno); font-weight: 700; }
+.mal { color: var(--malo); font-weight: 600; }
+.zonas-toggle { margin-top: 14px; }
+.mapas { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+@media (max-width: 1100px) { .mapas { grid-template-columns: 1fr; } }
+figure { margin: 0; }
+figcaption { font-weight: 600; margin-bottom: 6px; font-size: .95rem; }
+.mapa { border: 1px solid var(--borde); border-radius: 10px; background: var(--fondo); aspect-ratio: 1; }
+.mapa svg { width: 100%; height: 100%; display: block; }
+.leyenda { color: var(--suave); font-size: .82rem; }
+.rojo { color: var(--malo); }
+.ruta-caja { border: 1px solid var(--borde); border-radius: 10px; margin: 12px 0; padding: 10px 12px; }
+.ruta-caja h3 { margin: 0 0 6px; font-size: .95rem; display: flex; align-items: center; gap: 8px; }
+.punto { width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
+.graficos { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px; }
+.graficos img { width: 100%; border: 1px solid var(--borde); border-radius: 10px; background: #fff; }
+code { background: var(--fondo); padding: 2px 5px; border-radius: 5px; font-size: .8rem; }

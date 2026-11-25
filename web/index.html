@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ruta Óptima de Última Milla – Lima</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header class="cabecera">
+    <div>
+      <h1>Ruta Óptima de Última Milla · Lima</h1>
+      <p>Comparación: estrategia <b>voraz</b> vs. <b>divide y vencerás + programación dinámica</b> (Held-Karp)</p>
+    </div>
+    <span class="etiqueta">Análisis de Algoritmos · UPN</span>
+  </header>
+
+  <main class="contenedor">
+    <aside class="panel" aria-label="Parámetros">
+      <h2>Parámetros</h2>
+      <form id="formulario">
+        <label>Clientes (n): <output id="o-n">40</output>
+          <input type="range" id="n" min="8" max="200" value="40"></label>
+        <label>Vehículos: <output id="o-vehiculos">6</output>
+          <input type="range" id="vehiculos" min="1" max="15" value="6"></label>
+        <label>Clientes máx. por zona (k): <output id="o-k">12</output>
+          <input type="range" id="k" min="4" max="14" value="12"></label>
+        <label>Semilla (misma semilla = mismo problema)
+          <input type="number" id="semilla" value="42" min="0" max="999999"></label>
+        <label class="casilla"><input type="checkbox" id="distritos"> Clientes agrupados por distritos</label>
+        <button type="submit" id="calcular">Calcular rutas</button>
+        <button type="button" id="otra" class="secundario">🎲 Otra instancia</button>
+      </form>
+      <details class="ayuda">
+        <summary>¿Qué se está resolviendo?</summary>
+        <p>Cada vehículo sale del almacén a las 09:00, carga hasta 100 unidades, debe llegar a cada cliente
+        dentro de su ventana de 2 horas y volver antes de 8 horas de jornada. Costo: S/ 1.20 por km + S/ 12.50 por hora.</p>
+      </details>
+    </aside>
+
+    <section class="resultados">
+      <div id="estado" class="aviso">Elige los parámetros y presiona <b>Calcular rutas</b>.</div>
+
+      <div id="contenido" hidden>
+        <nav class="pestanas" role="tablist">
+          <button class="pestana activa" data-pestana="comparacion">Comparación</button>
+          <button class="pestana" data-pestana="detalle">Detalle de rutas</button>
+          <button class="pestana" data-pestana="experimentos">Experimentos</button>
+        </nav>
+
+        <div id="comparacion" class="vista">
+          <div id="ganador" class="resumen"></div>
+          <div class="tabla-caja"><table id="tabla-comparacion"></table></div>
+          <label class="casilla zonas-toggle"><input type="checkbox" id="ver-zonas"> Mostrar las zonas de divide y vencerás (colores de fondo)</label>
+          <div class="mapas">
+            <figure><figcaption id="titulo-voraz"></figcaption><div id="mapa-voraz" class="mapa"></div></figure>
+            <figure><figcaption id="titulo-dcpd"></figcaption><div id="mapa-dcpd" class="mapa"></div></figure>
+          </div>
+          <p class="leyenda">■ almacén · ● cliente atendido · <span class="rojo">●</span> cliente NO atendido · cada color es un vehículo</p>
+        </div>
+
+        <div id="detalle" class="vista" hidden>
+          <label>Estrategia:
+            <select id="sel-estrategia">
+              <option value="voraz">Voraz</option>
+              <option value="dc_pd">Divide y vencerás + PD</option>
+            </select>
+          </label>
+          <div id="detalle-rutas"></div>
+        </div>
+
+        <div id="experimentos" class="vista" hidden>
+          <p>Gráficos generados por el benchmark (<code>python -c "from ruta_optima.benchmark import ejecutar_benchmark as e; e([20,50,100,150,200],[1,2,3],12)"</code>).</p>
+          <div id="graficos" class="graficos"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
