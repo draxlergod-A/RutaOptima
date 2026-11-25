@@ -43,9 +43,9 @@ Tu guion de 1 minuto para la exposición está en `docs/PRESENTACION.md` (busca 
 ## Mis respuestas
 _(Escribe aquí tus respuestas, 2 o 3 líneas por pregunta.)_
 
-1. 
-2. 
-3. 
+1. Porque el camión no puede ir "volando" en línea recta: en `construir_grafo_calles` solo hay aristas entre intersecciones vecinas de la cuadrícula (este-oeste o norte-sur, de 1 km). Para ir en diagonal hay que hacer "escalones" por las calles, y además se suma el tramo de la puerta del cliente a su esquina más cercana. Por eso la distancia por calles siempre es mayor o igual que la línea recta.
+2. En `matriz_distancias` se ejecuta Dijkstra **n + 1 veces**: una desde el almacén y una desde cada uno de los n clientes, y cada ejecución llena una fila de la matriz. Cada Dijkstra cuesta O((V + E) log V), así que el total es O((n + 1)·(V + E) log V), donde V son las intersecciones más los puntos de los clientes y E las calles.
+3. La cola de prioridad (min-heap con `heapq`) sirve para sacar siempre el nodo con la **menor distancia conocida** en O(log V), en vez de buscarlo recorriendo todos los nodos. Así Dijkstra fija primero los nodos más cercanos y garantiza que, cuando saca un nodo, su distancia ya es la mínima. Las entradas viejas (con distancia mayor a la ya guardada) simplemente se ignoran.
 
 ## Paso 5. Subir tu trabajo (rama → Pull Request → main)
 ```bash
