@@ -43,9 +43,9 @@ Tu guion de 1 minuto para la exposición está en `docs/PRESENTACION.md` (busca 
 ## Mis respuestas
 _(Escribe aquí tus respuestas, 2 o 3 líneas por pregunta.)_
 
-1. 
-2. 
-3. 
+1. `dp[mascara][j]` guarda el instante más temprano en que el vehículo puede terminar de atender al cliente `j`, habiendo visitado exactamente los clientes marcados en `mascara`. La máscara es un número cuyos bits encendidos indican qué clientes ya se atendieron. Así no se repite trabajo: cada combinación (subconjunto, último cliente) se calcula una sola vez.
+2. La complejidad es O(k²·2^k) en tiempo y O(k·2^k) en memoria, porque hay 2^k subconjuntos, k posibles últimos clientes y por cada uno se prueban k siguientes. Crece muy rápido: en nuestra prueba k = 12 tardó ~0.08 s y k = 14 ~0.25 s, y cada cliente extra casi duplica el tiempo. Por eso solo se aplica dentro de zonas pequeñas (k ≤ 12-14) y no a los 200 clientes juntos.
+3. Si llega antes de que abra la ventana, el vehículo espera: el inicio del servicio se calcula como `max(hora_de_llegada, c.ventana_ini)`. Si en cambio la hora de inicio pasa de `ventana_fin`, ese orden se descarta porque llegaría tarde.
 
 ## Paso 5. Subir tu trabajo (rama → Pull Request → main)
 ```bash
@@ -57,8 +57,8 @@ En GitHub: **Compare & pull request** hacia `main` → completa la plantilla →
 Antes de abrir el PR, cambia en el `README.md` **solo tu fila** del tablero: pon tu nombre y ✅. Guía de Git: `docs/GUIA_GIT.md`.
 
 ## Lista de verificación
-- [ ] Ejecuté el comando del Paso 2 sin errores
-- [ ] Guardé los archivos de entrega
-- [ ] Escribí mis respuestas
-- [ ] Actualicé mi fila del README
+- [x] Ejecuté el comando del Paso 2 sin errores
+- [x] Guardé los archivos de entrega
+- [x] Escribí mis respuestas
+- [x] Actualicé mi fila del README
 - [ ] Abrí el Pull Request y se unió a `main`
