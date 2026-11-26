@@ -51,9 +51,9 @@ Tu guion de 1 minuto para la exposición está en `docs/PRESENTACION.md` (busca 
 ## Mis respuestas
 _(Escribe aquí tus respuestas, 2 o 3 líneas por pregunta.)_
 
-1. 
-2. 
-3. 
+1. La tabla de resultados sale de `resultados/resultados.csv`; el promedio por tamaño ya está armado en `docs/RESULTADOS.md` y se copia tal cual al informe. Los gráficos son `costo_vs_n.png`, `atendidos_vs_n.png`, `tiempo_vs_n.png` y `atendidos_vs_vehiculos.png`, y además los de cada rol (`zonas_k12.png`, `held_karp_tiempo.png`, `fuerza_bruta_vs_held_karp.png`). La tabla del efecto de k sale de `experimento_k.csv`.
+2. Están todos en `ruta_optima/config.py`: capacidad de 100 paquetes por vehículo, jornada de 8 horas con salida a las 09:00, flota máxima de 15 vehículos, de 20 a 200 clientes, demanda de 1 a 6 paquetes, servicio de 5 a 10 minutos, ventanas de 2 horas entre las 09:00 y las 18:00, ciudad de 20 × 20 km, velocidad de 25 km/h, costo de S/ 1.20 por km y S/ 12.50 por hora, y k = 12 clientes por zona.
+3. (1) Las calles son una cuadrícula simulada, no el mapa real de Lima. (2) La velocidad es constante (25 km/h) y no hay tráfico según la hora. (3) Hay un solo almacén. (4) Las zonas se arman solo por ubicación, sin tener en cuenta las ventanas de horario de los clientes.
 
 ## Paso 5. Subir tu trabajo (rama → Pull Request → main)
 ```bash
@@ -65,8 +65,8 @@ En GitHub: **Compare & pull request** hacia `main` → completa la plantilla →
 Antes de abrir el PR, cambia en el `README.md` **solo tu fila** del tablero: pon tu nombre y ✅. Guía de Git: `docs/GUIA_GIT.md`.
 
 ## Lista de verificación
-- [ ] Ejecuté el comando del Paso 2 sin errores
-- [ ] Guardé los archivos de entrega
-- [ ] Escribí mis respuestas
-- [ ] Actualicé mi fila del README
-- [ ] Abrí el Pull Request y se unió a `main`
+- [x] Ejecuté el comando del Paso 2 sin errores
+- [x] Guardé los archivos de entrega (`docs/PRESENTACION.md`; el informe Word se completa fuera del repositorio)
+- [x] Escribí mis respuestas
+- [x] Actualicé mi fila del README
+- [x] Abrí el Pull Request y se unió a `main`
