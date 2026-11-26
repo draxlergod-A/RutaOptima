@@ -44,9 +44,9 @@ Tu guion de 1 minuto para la exposición está en `docs/PRESENTACION.md` (busca 
 ## Mis respuestas
 _(Escribe aquí tus respuestas, 2 o 3 líneas por pregunta.)_
 
-1. 
-2. 
-3. 
+1. Quickselect encuentra el valor que quedaría en la posición k si ordenáramos la lista (aquí, la mediana) **sin ordenar todo**. Elige un pivote, separa los valores en menores, iguales y mayores, y sigue buscando solo en el lado donde cae la posición k. En promedio cuesta O(n), mientras que ordenar todo costaría O(n log n).
+2. Porque la mediana parte a los clientes en dos mitades del mismo tamaño (si hay empates en la mediana, se reparten por `id` hasta completar la mitad). `dividir_en_zonas` repite el corte en cada mitad hasta que el grupo tenga k clientes o menos, que es el caso base. Por eso ninguna zona puede pasar de k. En mi ejecución con 60 clientes salieron 8 zonas de 7–8 clientes con k = 12, y 16 zonas de 3–4 clientes con k = 6.
+3. T(n) = 2T(n/2) + O(n): en cada nivel se hacen 2 subproblemas de la mitad del tamaño, y partir cuesta O(n) (Quickselect más separar a los clientes). Por el Teorema Maestro (a = 2, b = 2, f(n) = n, caso 2) la complejidad es **O(n log n)**: hay unos log₂(n/k) niveles y en cada nivel se trabaja O(n) en total.
 
 ## Paso 5. Subir tu trabajo (rama → Pull Request → main)
 ```bash
@@ -58,8 +58,8 @@ En GitHub: **Compare & pull request** hacia `main` → completa la plantilla →
 Antes de abrir el PR, cambia en el `README.md` **solo tu fila** del tablero: pon tu nombre y ✅. Guía de Git: `docs/GUIA_GIT.md`.
 
 ## Lista de verificación
-- [ ] Ejecuté el comando del Paso 2 sin errores
-- [ ] Guardé los archivos de entrega
-- [ ] Escribí mis respuestas
-- [ ] Actualicé mi fila del README
-- [ ] Abrí el Pull Request y se unió a `main`
+- [x] Ejecuté el comando del Paso 2 sin errores
+- [x] Guardé los archivos de entrega
+- [x] Escribí mis respuestas
+- [x] Actualicé mi fila del README
+- [x] Abrí el Pull Request y se unió a `main`
