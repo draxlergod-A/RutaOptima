@@ -48,7 +48,7 @@ Otros comandos: `python main.py --n 60 --vehiculos 9` (consola) · `python -m py
 | 6 | Programación dinámica Held-Karp | `ruta_optima/held_karp.py` | `feature/rol06-held-karp` | [ROL-06](docs/tareas/ROL-06_held-karp.md) | Aldrin meliton  | ⬜ Pendiente |
 | 7 | Fuerza bruta de verificación | `ruta_optima/fuerza_bruta.py` | `feature/rol07-fuerza-bruta` | [ROL-07](docs/tareas/ROL-07_fuerza-bruta.md) | _(Fredy N.)_ | ✅ Listo |
 | 8 | Benchmark, gráficos y casos extremos | `ruta_optima/benchmark.py`, `tests/test_casos_borde.py` | `feature/rol08-benchmark-pruebas` | [ROL-08](docs/tareas/ROL-08_benchmark-pruebas.md) | _(nombre)_ | ⬜ Pendiente |
-| 9 | Página web, demo y capturas | `app.py`, `web/` | `feature/rol09-interfaz-web` | [ROL-09](docs/tareas/ROL-09_interfaz-web.md) | _(Christian Valer)_ | ⬜ Pendiente |
+| 9 | Página web, demo y capturas | `app.py`, `web/` | `feature/rol09-interfaz-web` | [ROL-09](docs/tareas/ROL-09_interfaz-web.md) | _(Christian Valer)_ | ✅ Listo |
 | 10 | Informe final y sustentación | `docs/PRESENTACION.md` + informe Word | `feature/rol10-informe-y-sustentacion` | [ROL-10](docs/tareas/ROL-10_informe-y-sustentacion.md) | _(nombre)_ | ⬜ Pendiente |
 
 Estados: ⬜ Pendiente · 🟨 En curso · ✅ Listo
