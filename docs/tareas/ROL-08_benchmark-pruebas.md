@@ -73,9 +73,9 @@ Tu guion de 1 minuto para la exposición está en `docs/PRESENTACION.md` (busca 
 ## Mis respuestas
 _(Escribe aquí tus respuestas, 2 o 3 líneas por pregunta.)_
 
-1. 
-2. 
-3. 
+1. Depende de n. **Divide y vencerás + PD** tiene menor costo con 20, 50 y 100 clientes (por ejemplo, S/ 993.90 vs S/ 1117.95 con 50), y atiende más clientes con 20, 50, 150 y 200. Con 100 clientes el voraz atiende un poco más (97.8 % vs 95.0 %). Con 150 y 200 el voraz sale más barato, pero porque atiende a menos clientes (77.3 % vs 90.9 % con 150). El voraz siempre es el más rápido (milisegundos).
+2. Con k = 8 y k = 10 el costo es igual (S/ 2120.00) y tarda unos 0.002 s. Con k = 12 baja a S/ 1840.83 (0.06 s) y con k = 14 baja a S/ 1495.57, pero tarda 0.16 s. Es decir, zonas más grandes dan rutas más baratas porque Held-Karp optimiza más clientes juntos, pero el tiempo crece muy rápido (O(k²·2^k)). Por eso usamos k = 12 como punto medio.
+3. Porque una sola instancia puede salir "con suerte" o "sin suerte" para una estrategia (clientes muy juntos o muy dispersos). Con 5 semillas distintas probamos 5 problemas diferentes de cada tamaño y promediamos, así el resultado es más confiable y la comparación es justa. Además, cada semilla es reproducible: cualquiera puede repetir el experimento y obtener los mismos números.
 
 ## Paso 5. Subir tu trabajo (rama → Pull Request → main)
 ```bash
@@ -87,8 +87,8 @@ En GitHub: **Compare & pull request** hacia `main` → completa la plantilla →
 Antes de abrir el PR, cambia en el `README.md` **solo tu fila** del tablero: pon tu nombre y ✅. Guía de Git: `docs/GUIA_GIT.md`.
 
 ## Lista de verificación
-- [ ] Ejecuté el comando del Paso 2 sin errores
-- [ ] Guardé los archivos de entrega
-- [ ] Escribí mis respuestas
-- [ ] Actualicé mi fila del README
-- [ ] Abrí el Pull Request y se unió a `main`
+- [x] Ejecuté el comando del Paso 2 sin errores
+- [x] Guardé los archivos de entrega
+- [x] Escribí mis respuestas
+- [x] Actualicé mi fila del README
+- [x] Abrí el Pull Request y se unió a `main`
