@@ -61,4 +61,4 @@ Antes de abrir el PR, cambia en el `README.md` **solo tu fila** del tablero: pon
 - [x] Guardé los archivos de entrega
 - [x] Escribí mis respuestas
 - [x] Actualicé mi fila del README
-- [ ] Abrí el Pull Request y se unió a `main`
+- [x] Abrí el Pull Request y se unió a `main`
