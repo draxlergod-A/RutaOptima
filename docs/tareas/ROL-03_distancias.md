@@ -21,7 +21,7 @@ Si Git dice que la rama no existe, créala: `git checkout -b feature/rol03-dista
 
 ## Paso 2. Ejecutar
 ```bash
-scripts/rol03_distancias.py
+python scripts/rol03_distancias.py
 ```
 Debe terminar sin errores y mostrar resultados en la terminal. Si falla, mira `EJECUTAR.md` (sección «Si algo falla»).
 

@@ -21,7 +21,7 @@ Si Git dice que la rama no existe, créala: `git checkout -b feature/rol05-voraz
 
 ## Paso 2. Ejecutar
 ```bash
-scripts/rol05_voraz.py
+python scripts/rol05_voraz.py
 ```
 Debe terminar sin errores y mostrar resultados en la terminal. Si falla, mira `EJECUTAR.md` (sección «Si algo falla»).
 

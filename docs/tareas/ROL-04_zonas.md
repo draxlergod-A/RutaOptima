@@ -21,7 +21,7 @@ Si Git dice que la rama no existe, créala: `git checkout -b feature/rol04-zonas
 
 ## Paso 2. Ejecutar
 ```bash
-scripts/rol04_zonas.py
+python scripts/rol04_zonas.py
 ```
 Debe terminar sin errores y mostrar resultados en la terminal. Si falla, mira `EJECUTAR.md` (sección «Si algo falla»).
 

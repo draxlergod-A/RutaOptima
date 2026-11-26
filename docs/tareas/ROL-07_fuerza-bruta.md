@@ -21,7 +21,7 @@ Si Git dice que la rama no existe, créala: `git checkout -b feature/rol07-fuerz
 
 ## Paso 2. Ejecutar
 ```bash
-scripts/rol07_verificacion.py
+python scripts/rol07_verificacion.py
 ```
 Debe terminar sin errores y mostrar resultados en la terminal. Si falla, mira `EJECUTAR.md` (sección «Si algo falla»).
 
