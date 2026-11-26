@@ -72,8 +72,8 @@ En GitHub: **Compare & pull request** hacia `main` → completa la plantilla →
 Antes de abrir el PR, cambia en el `README.md` **solo tu fila** del tablero: pon tu nombre y ✅. Guía de Git: `docs/GUIA_GIT.md`.
 
 ## Lista de verificación
-- [✅ ] Ejecuté el comando del Paso 2 sin errores
-- [ ✅] Guardé los archivos de entrega
-- [✅ ] Escribí mis respuestas
-- [ ] Actualicé mi fila del README
-- [ ] Abrí el Pull Request y se unió a `main`
+- [✅] Ejecuté el comando del Paso 2 sin errores
+- [✅] Guardé los archivos de entrega
+- [✅] Escribí mis respuestas
+- [✅] Actualicé mi fila del README
+- [✅] Abrí el Pull Request y se unió a `main`
