@@ -1,0 +1,94 @@
+{
+ "deposito": {
+  "id": 0,
+  "x": 10.0,
+  "y": 10.0,
+  "demanda": 0,
+  "ventana_ini": 0.0,
+  "ventana_fin": 1440.0,
+  "servicio": 0.0
+ },
+ "clientes": [
+  {
+   "id": 1,
+   "x": 11.384,
+   "y": 16.045,
+   "demanda": 1,
+   "ventana_ini": 600.0,
+   "ventana_fin": 720.0,
+   "servicio": 7.0
+  },
+  {
+   "id": 2,
+   "x": 9.909,
+   "y": 8.99,
+   "demanda": 6,
+   "ventana_ini": 570.0,
+   "ventana_fin": 690.0,
+   "servicio": 8.0
+  },
+  {
+   "id": 3,
+   "x": 4.199,
+   "y": 9.757,
+   "demanda": 4,
+   "ventana_ini": 900.0,
+   "ventana_fin": 1020.0,
+   "servicio": 8.0
+  },
+  {
+   "id": 4,
+   "x": 15.246,
+   "y": 0.042,
+   "demanda": 4,
+   "ventana_ini": 810.0,
+   "ventana_fin": 930.0,
+   "servicio": 7.0
+  },
+  {
+   "id": 5,
+   "x": 16.037,
+   "y": 11.823,
+   "demanda": 1,
+   "ventana_ini": 870.0,
+   "ventana_fin": 990.0,
+   "servicio": 7.0
+  },
+  {
+   "id": 6,
+   "x": 0.446,
+   "y": 12.991,
+   "demanda": 1,
+   "ventana_ini": 540.0,
+   "ventana_fin": 660.0,
+   "servicio": 8.0
+  },
+  {
+   "id": 7,
+   "x": 4.332,
+   "y": 8.442,
+   "demanda": 1,
+   "ventana_ini": 840.0,
+   "ventana_fin": 960.0,
+   "servicio": 9.0
+  },
+  {
+   "id": 8,
+   "x": 15.274,
+   "y": 18.783,
+   "demanda": 5,
+   "ventana_ini": 630.0,
+   "ventana_fin": 750.0,
+   "servicio": 6.0
+  }
+ ],
+ "num_vehiculos": 2,
+ "capacidad": 100,
+ "jornada_max": 480,
+ "hora_salida": 540,
+ "velocidad_kmh": 25.0,
+ "costo_km": 1.2,
+ "costo_hora": 12.5,
+ "factor_vial": 1.3,
+ "semilla": 1
+}
