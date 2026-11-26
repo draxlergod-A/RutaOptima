@@ -1,8 +1,4 @@
-"""ROL 8 - casos borde del sistema completo. Cada integrante de ROL 8 agrega aquí sus pruebas.
-
-TODO (ROL 8): reemplazar los `pytest.skip` por pruebas reales (ver docs/tareas/ROL-08_*.md).
-"""
-import pytest
+"""ROL 8 - casos borde del sistema completo: casos pequeños, capacidad insuficiente y ventanas imposibles."""
 
 from ruta_optima.generador import generar_instancia
 from ruta_optima.solver import comparar
@@ -27,11 +23,21 @@ def test_k_mas_uno_clientes():
     assert all(ev.valida for _, ev in r.values())
 
 
-@pytest.mark.skip(reason="TODO ROL 8: capacidad total insuficiente -> debe haber no_atendidos")
 def test_capacidad_insuficiente():
-    ...
+    from ruta_optima.modelos import Instancia
+    base = generar_instancia(20, 2, semilla=1)
+    inst = Instancia(base.deposito, base.clientes, 2, capacidad=10)   # capacidad total 20 < demanda
+    for nombre, (sol, ev) in comparar(inst, 12).items():
+        assert ev.valida, (nombre, ev.errores)
+        assert ev.no_atendidos > 0
 
 
-@pytest.mark.skip(reason="TODO ROL 8: ventana imposible de cumplir")
 def test_ventanas_imposibles():
-    ...
+    from dataclasses import replace
+    from ruta_optima.modelos import Instancia
+    base = generar_instancia(10, 3, semilla=1)
+    clientes = [replace(c, ventana_ini=0.0, ventana_fin=1.0) for c in base.clientes]  # cierran a las 00:01
+    inst = Instancia(base.deposito, clientes, 3)
+    for nombre, (sol, ev) in comparar(inst, 12).items():
+        assert ev.valida, (nombre, ev.errores)
+        assert ev.atendidos == 0
