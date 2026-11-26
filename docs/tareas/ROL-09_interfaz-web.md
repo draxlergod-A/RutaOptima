@@ -56,9 +56,11 @@ Tu guion de 1 minuto para la exposición está en `docs/PRESENTACION.md` (busca 
 ## Mis respuestas
 _(Escribe aquí tus respuestas, 2 o 3 líneas por pregunta.)_
 
-1. 
-2. 
-3. 
+1. La página web se comunica con Python mediante una solicitud llamada fetch. Cuando presionamos el botón para calcular, JavaScript envía los datos al servidor Python, este ejecuta los algoritmos y devuelve los resultados en formato JSON para mostrarlos en la página.
+
+2. Este botón genera una nueva semilla aleatoria y vuelve a ejecutar el cálculo. De esta manera, podemos obtener diferentes ejemplos de clientes, ubicaciones y rutas para comparar los resultados.
+
+3. Los clientes aparecen en rojo cuando no pudieron ser atendidos por alguna de las estrategias. Esto puede ocurrir porque se supera la capacidad del vehículo, no se llega dentro del horario permitido o se acaba el tiempo de la jornada.
 
 ## Paso 5. Subir tu trabajo (rama → Pull Request → main)
 ```bash
@@ -70,8 +72,8 @@ En GitHub: **Compare & pull request** hacia `main` → completa la plantilla →
 Antes de abrir el PR, cambia en el `README.md` **solo tu fila** del tablero: pon tu nombre y ✅. Guía de Git: `docs/GUIA_GIT.md`.
 
 ## Lista de verificación
-- [ ] Ejecuté el comando del Paso 2 sin errores
-- [ ] Guardé los archivos de entrega
-- [ ] Escribí mis respuestas
+- [✅ ] Ejecuté el comando del Paso 2 sin errores
+- [ ✅] Guardé los archivos de entrega
+- [✅ ] Escribí mis respuestas
 - [ ] Actualicé mi fila del README
 - [ ] Abrí el Pull Request y se unió a `main`
