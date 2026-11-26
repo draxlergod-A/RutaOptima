@@ -45,9 +45,9 @@ Tu guion de 1 minuto para la exposición está en `docs/PRESENTACION.md` (busca 
 ## Mis respuestas
 _(Escribe aquí tus respuestas, 2 o 3 líneas por pregunta.)_
 
-1. 
-2. 
-3. 
+1. Se obtiene la misma instancia en ambas ocasiones, porque la semilla permite repetir los mismos valores aleatorios. Esto se observa en generador.py, mediante random.Random(semilla).
+2. Sirve para almacenar los datos de una instancia y poder utilizarlos nuevamente sin tener que generarla otra vez. Así podemos repetir los experimentos y comparar sus resultados.
+3. La diferencia está en cómo se generan las coordenadas de los clientes. En generar_instancia_distritos se utiliza random.gauss para agrupar las ubicaciones por distritos.
 
 ## Paso 5. Subir tu trabajo (rama → Pull Request → main)
 ```bash
@@ -59,8 +59,8 @@ En GitHub: **Compare & pull request** hacia `main` → completa la plantilla →
 Antes de abrir el PR, cambia en el `README.md` **solo tu fila** del tablero: pon tu nombre y ✅. Guía de Git: `docs/GUIA_GIT.md`.
 
 ## Lista de verificación
-- [ ] Ejecuté el comando del Paso 2 sin errores
-- [ ] Guardé los archivos de entrega
-- [ ] Escribí mis respuestas
-- [ ] Actualicé mi fila del README
-- [ ] Abrí el Pull Request y se unió a `main`
+- [✅] Ejecuté el comando del Paso 2 sin errores
+- [✅] Guardé los archivos de entrega
+- [✅] Escribí mis respuestas
+- [✅] Actualicé mi fila del README
+- [✅] Abrí el Pull Request y se unió a `main`
