@@ -21,7 +21,7 @@ Si Git dice que la rama no existe, créala: `git checkout -b feature/rol06-held-
 
 ## Paso 2. Ejecutar
 ```bash
-scripts/rol06_held_karp.py
+python scripts/rol06_held_karp.py
 ```
 Debe terminar sin errores y mostrar resultados en la terminal. Si falla, mira `EJECUTAR.md` (sección «Si algo falla»).
 

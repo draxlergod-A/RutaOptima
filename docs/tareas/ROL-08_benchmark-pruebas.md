@@ -21,7 +21,7 @@ Si Git dice que la rama no existe, créala: `git checkout -b feature/rol08-bench
 
 ## Paso 2. Ejecutar
 ```bash
-scripts/rol08_benchmark.py
+python scripts/rol08_benchmark.py
 ```
 Debe terminar sin errores y mostrar resultados en la terminal. Si falla, mira `EJECUTAR.md` (sección «Si algo falla»).
 
